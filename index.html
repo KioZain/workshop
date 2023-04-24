@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      body{
+        margin: 0;
+        padding: 0;
+      }
+      *{
+        box-sizing: border-box;
+      }
+      h1,p,a,h2{
+        font-family: Roboto Flex;
+      }
+      .yellow{
+        width: 49vw;
+        height: 45vw;
+        background-color: #FFD029;
+        top: 136px;
+        left: 199px;
+        transform: rotate(7deg);
+        z-index: 1;
+      }
+      .blackBig{
+        width: 1145px;
+        height: 732px;
+        background-color: #202020;
+        top: 223px;
+        left: 628px;
+        transform: rotate(4deg);
+      }
+      /* .sub{
+        position: absolute;
+        top: 953px;
+        left: 144px;
+        transform: rotate(7deg);
+      } */
+      .red{
+        width: 280px;
+        height: 1140px;
+        background-color: #CD3C3C;
+        top: 40px;
+        left: 550px;
+        transform: rotate(7deg);
+        z-index: 2;
+        animation: 4s redA linear infinite;
+      }
+      @keyframes redA {
+        33% {transform:rotate(5deg);}
+        66% {transform:rotate(10deg);}
+      }
+      .stick{
+        width: 300px;
+        height: 30px;
+        background-color: #202020;
+      }
+      .first{
+        left: 463px;
+        top: 1190px;
+        transform: rotate(7deg);
+        animation: 2s redA linear infinite;
+      }
+      .second{
+        left: 620px;
+        top: 1250px;
+        transform: rotate(7deg);
+        animation: 2s sMove linear infinite;
+      }
+      @keyframes sMove {
+        33% {transform:rotate(-5deg);}
+      }
+        .third{
+        left: 314px;
+        top: 1115px;
+        transform: rotate(2deg);
+        z-index: 2;
+        animation: 2s tMove linear infinite;
+      }
+      @keyframes tMove {
+        33% {transform:rotate(-30deg);}
+      }
+      .fourth{
+        left: 323px;
+        top: 1406px;
+        transform: rotate(7deg);
+        z-index: 2;
+        animation: 2s fMove linear infinite;
+      }
+      @keyframes fMove {
+        33% {transform:rotate(25deg);}
+      }
+      .blueLong{
+        width: 75px;
+        height: 1788px;
+        background-color: #273685;
+        top: 119px;
+        left: 1179px;
+        transform: rotate(7deg);
+        z-index: 2;
+        animation: 6s blueLongA linear infinite;
+      }
+      @keyframes blueLongA {
+        49% {transform:rotate(-5deg);}
+        99% {transform:rotate(7deg);}
+      }
+      .blueLong2{
+        width: 30px;
+        height: 1890px;
+        background-color: #273685;
+        top: 30px;
+        left: 992px;
+        transform: rotate(7deg);
+        z-index: 2;
+        animation: blueLong2A 2s linear infinite;
+      }
+      @keyframes blueLong2A {
+        33%{width: 25px;}
+        66%{width: 15px;}
+        }
+      .blueLong3{
+        width: 1354px;
+        height: 31px;
+        background-color: #273685;
+        top: 1395px;
+        left: 325px;
+        transform: rotate(353deg);
+        z-index: 2;
+        animation: change 3s linear infinite;
+      }
+      @keyframes change {
+        33%{width: 1400px;}
+        36%{height: 15px;}
+        66%{width: 1600px;}
+        36%{height: 10px;}
+      }
+      .suprem > div{
+        position: absolute;
+      }
+    </style>
+    <title>Супрематизм</title>
+  </head>
+  <body>
+    <div class="suprem">
+      <div class="yellow"></div>
+      <div class="red"></div>
+      <div class="blackBig"></div>
+      <div class="blueLong"></div>
+      <div class="blueLong2"></div>
+      <div class="blueLong3"></div>
+      <div class="stick first"></div>
+      <div class="stick second"></div>
+      <div class="stick third"></div>
+      <div class="stick fourth"></div>
+    </div>
+  </body>
+</html>
